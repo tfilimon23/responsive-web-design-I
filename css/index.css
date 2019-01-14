@@ -1,3 +1,287 @@
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body.container {
+	width: 1024px;
+	margin: auto;
+}
+
+.nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+	margin-top: 25px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	width: 700px;
+}
+
+nav a{
+    text-decoration: none;
+	color: lightgrey;
+}
+
+@media(max-width: 800px) {
+	.nav{
+		display:flex;
+		flex-direction:column-reverse;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 799px;
+	}
+	
+}
+@media(max-width:500px){
+	.nav{
+		display: flex;
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+		width: 499px;
+	}
+
+	.tabs{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		
+	}
+
+}
+
+
+.main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 50px;
+}
+
+@media(max-width: 800px) {
+	
+	.circlepic{
+	visibility: hidden;
+	}
+	.innovation{
+		justify-content:center;
+	}
+
+}
+
+.title{
+	font-size: 80px;
+	text-align: center;
+}
+
+.getstarted{
+	width: 190px;
+	margin-top: 20px;
+	margin-left: 65px;
+	font-size: 20px;
+	border: 1px solid black;
+	padding: 5px 45px 5px 45px;
+}
+
+.line1{
+	border-top: 1px solid black;
+	margin-top: 25px;
+}
+
+@media(max-width:800px){
+	.line1{
+		width: 799px;
+	}
+}
+@media(max-width:500px){
+	.line1{
+		width:499px;
+	}
+}
+
+.section1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 1024px;
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+
+@media(max-width: 800px){
+	.section1{
+	width:799px;
+}
+}
+@media(max-width: 500px){
+	.section1{
+	display:flex;
+	flex-direction: column;
+	width:499px;
+
+	}
+}
+
+.middle-img{
+	width: 1024px;
+}
+
+@media(max-width: 800px){
+	.middle-img{
+		width: 799px;
+	}
+}
+@media(max-width: 500px){
+	.middle-img{
+		width:499px;
+	}
+}
+
+.section2{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: space-between;
+ width: 1024px;
+ margin-top: 30px;
+ padding-bottom: 30px;
+}
+
+@media(max-width:800px){
+	.section2{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		width:799px;
+	} 
+	div{
+		margin-bottom: 20px;
+	}
+}
+@media(max-width:500px){
+	.section2{
+		flex-direction: column;
+		width:499px;
+	}
+}
+
+footer{
+	 border-top: 1px solid black;
+	 padding: 20px 0;
+}
+
+@media(max-width: 800px) {
+	footer{
+		width:799px;
+	}
+}
+@media(max-width: 500px){
+	footer{
+		width:499px;
+	}
+}
+
+.address{
+	margin-bottom: 15px;
+}
+
+.phone{
+	margin-bottom: 15px;
+}
+
+.copyright {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+@media(max-width:800px) {
+	.copyright {
+		width:799px;
+		text-align: center;
+	}
+}
+
+@media(max-width:500px) {
+	.copyright {
+		width:499px;
+		text-align: center;
+	}
+}
 
