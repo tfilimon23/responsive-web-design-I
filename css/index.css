@@ -113,11 +113,23 @@ nav a{
 		width: 499px;
 	}
 
-	.tabs{
+	nav{
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		
+		align-items:center;
+		font-size: 30px;
+		width: 490px;
+	}
+
+	.logo{
+		padding: 0 200px 15px 200px;
+		border-bottom: 1px solid black;
+	}
+
+	.tabs{
+		padding: 0 200px 15px 200px;
+		border-bottom: 1px solid black;
 	}
 
 }
@@ -134,12 +146,17 @@ nav a{
 }
 
 @media(max-width: 800px) {
+
+	.main{
+		justify-content: center;
+		margin-left: 160px;
+	}
 	
 	.circlepic{
 	visibility: hidden;
 	}
 	.innovation{
-		justify-content:center;
+		justify-content: center;
 	}
 
 }
